@@ -18,6 +18,5 @@ export default defineConfig({
 		expect : {timeout : 10*1000},
 		reporter: 'html',
 		use: {browserName : 'chromium'}
-
 });
 
