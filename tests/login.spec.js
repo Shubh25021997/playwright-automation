@@ -1,7 +1,8 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('Validate login successful', async ({ page }) => {
+
+  test('Validate login successful', async ({ page }) => {
   await page.goto('https://devapp.rocketdeal.in/');
 
   // Expect a title "to contain" a substring.
@@ -15,6 +16,5 @@ test('Validate login successful', async ({ page }) => {
   //expect a Dashboard page is opened
   //as pagename is same as on login window, so validating 'Logout button is displayed'
   expect(await page.locator("text =Logout").isVisible()).toBeTruthy();
-
 });
 
