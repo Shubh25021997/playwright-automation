@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test.only('Create deal', async ({ page }) => {
+test('Create deal', async ({ page }) => {
 
   const productName = "iphone 17 - HQ";
   const dealPrice = "51000";
